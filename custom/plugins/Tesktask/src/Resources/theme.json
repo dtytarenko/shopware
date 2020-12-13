@@ -1,0 +1,29 @@
+{
+  "name": "Tesktask",
+  "author": "Dmytro Tytarenko",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@PayPal",
+     "@Tesktask"
+  ],
+  "style": [
+    "app/storefront/src/scss/mixins.scss",
+    "app/storefront/src/scss/swiper.scss",
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/swiper-bundle.js",
+    "app/storefront/dist/storefront/js/tesktask.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    
+  }
+}

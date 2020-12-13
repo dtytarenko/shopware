@@ -1,0 +1,23 @@
+@mixin bgImageDefault {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin dFlexJccAic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin tablet {
+    @media screen and (min-width: 767px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

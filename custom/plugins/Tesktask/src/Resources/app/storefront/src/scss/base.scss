@@ -1,0 +1,111 @@
+@import "./overrides.scss";
+@import "./mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.intro__slide {
+    @include dFlexJccAic;
+    flex-direction: column;
+    min-height: 300px;
+    background-image: url("../assets/bg.jpg");
+    @include bgImageDefault;
+
+    @include tablet{
+        min-height: 450px;
+    }
+}
+
+.intro__slide_title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+    color: $semiBlack;
+
+    @include tablet{
+        font-size: 24px;
+    }
+
+    @include laptop{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+.intro__slide_subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    width: calc(100% - 20px);
+    text-align: center;
+    color: $semiGray;
+
+    @include tablet{
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 465px;
+        width: 100%;
+    }
+}
+
+// custom slider blocks
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    bottom: 25px;
+    transform: translate3d(0, 0, 0);
+    transition: 0.3s opacity;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 3px solid $semiGray;
+    background-color: $white;
+
+    &:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    @include tablet{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    border: 3px solid $semiBlue;
+}
+
+.intro__button_next,
+.intro__button_prev {
+    @include dFlexJccAic;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    width: 32px;
+    height: 60px;
+    display: none;
+
+    @include tablet{
+        display: flex;
+    }
+}
+
+.intro__button_next {
+    right: 45px;
+    background-image: $arrowNext;
+    @include bgImageDefault;
+}
+
+.intro__button_prev {
+    left: 45px;
+    background-image: $arrowPrev;
+    @include bgImageDefault;
+}

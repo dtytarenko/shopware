@@ -1,0 +1,41 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_main %}
+{# I trying to sw_include cms-block-image-slider, but those attempts failed. After sw_include it`s rendered blank div.  #}
+    <div class="intro__slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="intro__slide  swiper-slide">
+                <p class="intro__slide_title">
+                    Workspace
+                </p>
+                <p class="intro__slide_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                </p>
+            </div>
+            <div class="intro__slide  swiper-slide">
+                <p class="intro__slide_title">
+                    Workspace
+                </p>
+                <p class="intro__slide_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                </p>
+            </div>
+            <div class="intro__slide  swiper-slide">
+                <p class="intro__slide_title">
+                    Workspace
+                </p>
+                <p class="intro__slide_subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                </p>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+            
+        <div class="intro__button_prev"></div>
+        <div class="intro__button_next"></div>
+    </div> 
+{% endblock %}

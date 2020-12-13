@@ -1,0 +1,16 @@
+/*
+Override variable defaults
+==================================================
+This file is used to override default SCSS variables from the Shopware Storefront or Bootstrap.
+
+Because of the !default flags, theme variable overrides have to be declared beforehand.
+https://getbootstrap.com/docs/4.0/getting-started/theming/#variable-defaults
+*/
+
+// custom variables
+$semiGray: #919191;
+$semiBlack: #2f2f2f;
+$semiBlue: #0099d2;
+$white: #ffffff;
+$arrowPrev: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='60' viewBox='0 0 32 60'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23919191' d='M4.115 29.982L31.464 2.9a1.68 1.68 0 0 0 0-2.4 1.72 1.72 0 0 0-2.424 0L.473 28.788a1.68 1.68 0 0 0 0 2.4L29.04 59.465c.33.327.774.503 1.206.503.431 0 .875-.163 1.206-.503a1.68 1.68 0 0 0 0-2.4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+$arrowNext: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='60' viewBox='0 0 32 60'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23919191' d='M27.85 30L.473 57.099a1.68 1.68 0 0 0 0 2.402 1.722 1.722 0 0 0 2.426 0l28.595-28.305a1.68 1.68 0 0 0 0-2.401L2.9.5A1.733 1.733 0 0 0 1.693 0C1.262-.001.817.162.486.5a1.68 1.68 0 0 0 0 2.402z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
