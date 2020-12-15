@@ -1,0 +1,24 @@
+{
+  "name": "TestTheme",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@TestTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/jquery.fancybox.scss",
+    "app/storefront/src/scss/slider.scss",
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/fancybox.js",
+    "app/storefront/dist/storefront/js/test-theme.js"
+  ],
+  "asset": [
+    "app/storefront/src/assets"
+  ]
+}

@@ -1,0 +1,16 @@
+{% sw_extends '@Storefront/storefront/element/cms-element-image-slider.html.twig' %}
+
+{% block element_image_slider_inner_item %}
+	<div class="image-slider-item-container">
+        <a href="{{ image.media.url }}" data-fancybox="gallery">
+            {{imageElement}}
+        </a>
+		{# {% if image.url %}
+			<a href="{{ image.url }}" class="image-slider-link" {% if image.newTab %} target="_blank" rel="noopener" {% endif %}>
+				{{ imageElement }}
+			</a>
+		{% else %}
+			{{ imageElement }}
+		{% endif %} #}
+	</div>
+{% endblock %}
